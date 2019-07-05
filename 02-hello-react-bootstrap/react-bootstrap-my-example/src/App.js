@@ -1,10 +1,10 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
-import {Home} from "./Home.js";
-import {About} from "./About.js";
-import {Contact} from "./Contact.js";
-import {NoMatch} from "./NoMatch.js";
+import {Home} from "./pages/Home.js";
+import {About} from "./pages/About.js";
+import {Contact} from "./pages/Contact.js";
+import {NoMatch} from "./pages/NoMatch.js";
 
 import {Layout} from "./components/Layout"
 import {NavigationBar} from "./components/NavigationBar";
