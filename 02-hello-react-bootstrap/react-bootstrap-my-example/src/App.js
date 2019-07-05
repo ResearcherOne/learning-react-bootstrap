@@ -6,17 +6,23 @@ import {About} from "./About.js";
 import {Contact} from "./Contact.js";
 import {NoMatch} from "./NoMatch.js";
 
+import {Layout} from "./components/Layout"
+import {NavigationBar} from "./components/NavigationBar";
+
 function App() {
   return (
     <React.Fragment>
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route path="/about" component={About}/>
-          <Route path="/contact" component={Contact}/>
-          <Route component={NoMatch}/>
-        </Switch>
-      </Router>
+      <NavigationBar/>
+      <Layout>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route path="/about" component={About}/>
+            <Route path="/contact" component={Contact}/>
+            <Route component={NoMatch}/>
+          </Switch>
+        </Router>
+      </Layout>
     </React.Fragment>
   );
 }
